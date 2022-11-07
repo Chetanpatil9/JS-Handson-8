@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <b> Create one function with zero parameter having a console statement;</b>
+    <pre><b>Ans -</b>
+    function dummy(){
+        console.log("Hello, World!");
+        
+        }
+        dummy();
+    </pre>
+
+<b> Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</b>
+<pre><b>Ans -</b>
+    function add(a,b){
+        var sum=a+b;
+        console.log ("sum of a+b is "+ sum);
+        }
+        add(3,4);
+</pre>
+
+<b> Create one arrow function</b>
+<pre><b>Ans -</b>
+const Check = (A, B) => 
+    {
+    return (A % 10==0)||(B%10==0)?true:false;
+    
+     return (A % 10==0)&&(B%10==0)?true:false;
+    
+    }
+    Check(A,B)
+</pre>
+
+<b> "Print output: var x = 21; var girl = function () { console.log(x); var x = 20; }; girl ();"</b>
+<pre>
+    Output:
+
+    undefined
+</pre>
+
+<b> "Print output: var x = 21; girl (); console.log(x) function girl() { console.log(x); var x = 20; }; "</b>
+<pre>
+    Output:
+
+    undefined
+    21
+</pre>
+
+<b> Write a function that accepts parameter n and returns factorial of n</b>
+<pre><b>Ans -</b>
+    function factorial(n){
+        let answer = 1;
+        if (n == 0 || n == 1){
+        return answer;
+        }else{
+        for(var i = n; i >= 1; i--){
+        answer = answer * i;
+        }
+</pre>    
+</body>
+<script src="./index.js"></script>
+</body>
+</html>
